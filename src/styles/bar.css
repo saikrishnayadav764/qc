@@ -1,0 +1,36 @@
+.barTopLeft{
+    display: flex;
+    align-items: flex-start;
+}
+
+.barTopRight{
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+
+.barTopWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.barindi{
+    width: 270px;
+    margin-right: 20px;
+
+}
+
+.title{
+    font-weight: 500;
+}
+
+.barName{
+    font-weight: 500;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.circtop{
+    color: grey;
+}
+

@@ -1,0 +1,5 @@
+.BarWrap{
+    display: flex;
+    margin-top: 27px;
+    flex-wrap: wrap;
+}

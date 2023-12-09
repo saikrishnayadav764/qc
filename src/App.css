@@ -1,0 +1,74 @@
+*{
+  box-sizing: border-box;
+}
+.opele{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+
+#Dropdown{
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* width: 400px; */
+  width: 20rem;
+  padding: 10px;
+  position: relative;
+  top: 5px;
+}
+
+
+.opele p{
+  margin-right: 50px;
+}
+
+.gop{
+  margin-right: 6px;
+  padding: 5px;
+}
+
+.dropdownWrap{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: white;
+}
+
+.display p{
+  margin: 0;
+}
+
+.wrapper{
+  margin: 0;
+  padding: 10px;
+  background-color: white;
+  height: 100%;
+
+}
+
+.display{
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid black;
+  width: 110px;
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 4px;
+  border-color: grey;
+  color: grey;
+}
+
+.display p{
+  margin-left: 3px;
+  margin-right: 3px;
+  color: black;
+  font-size: 0.92rem;
+  font-weight: 500;
+  
+}
+
+#tune{
+  font-size: 1.4rem;
+}
+
