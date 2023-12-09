@@ -65,7 +65,17 @@ function Bar({ data, grouping, name }) {
               className="barTopLeft"
             >
               <span class="material-symbols-outlined">more_horiz</span>
-              <p className="barName">Priority-{name}</p>
+              <p className="barName">
+                {name === "0"
+                  ? "No priority"
+                  : name === "1"
+                  ? "Low"
+                  : name === "2"
+                  ? "Medium"
+                  : name === "3"
+                  ? "High"
+                  : "Urgent"}
+              </p>
               <p>{count}</p>
             </div>
             <div className="barTopRight">
