@@ -45,6 +45,10 @@ function Card({ data, grouping }) {
           </p>
         </div>
 
+        
+        <br />
+        <br />
+
         <div className="carddowntag">
           <div>
             <img className="circ spec" src="feature.png" />
