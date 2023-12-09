@@ -6,10 +6,37 @@ function App() {
   const [isclicked, setIsClicked] = useState(false);
   const [tickets, setTickets] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
+
+  // Function to set a cookie
+  const setCookie = (name, value, days) => {
+    const expirationDate = new Date();
+    expirationDate.setDate(expirationDate.getDate() + days);
+    document.cookie = `${name}=${value}; expires=${expirationDate.toUTCString()}; path=/`;
+  };
+
+  // Function to get a cookie value
+  const getCookie = (name) => {
+    const cookies = document.cookie.split(";");
+    for (const cookie of cookies) {
+      const [cookieName, cookieValue] = cookie.trim().split("=");
+      if (cookieName === name) {
+        return cookieValue;
+      }
+    }
+    return null;
+  };
+
+  // Initializing state from cookies or default values
   const [display, setDisplay] = useState({
-    grouping: "status",
-    ordering: "priority",
+    grouping: getCookie("grouping") || "status",
+    ordering: getCookie("ordering") || "priority",
   });
+
+  // Updating cookies whenever display changes
+  useEffect(() => {
+    setCookie("grouping", display.grouping, 365);
+    setCookie("ordering", display.ordering, 365);
+  }, [display]);
 
   useEffect(() => {
     fetchData();
