@@ -20,6 +20,14 @@
 
 }
 
+@media screen and (max-width:600px){
+    .barindi{
+        width: 100%;
+        margin-right: 20px;
+    }
+
+}
+
 .title{
     font-weight: 500;
 }
@@ -27,7 +35,8 @@
 .barName{
     font-weight: 500;
     margin-left: 4px;
-    margin-right: 4px;
+    margin-right: 9px;
+    /* margin-top: 4px; */
 }
 
 .sameasname{
