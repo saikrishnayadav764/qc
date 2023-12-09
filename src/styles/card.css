@@ -21,6 +21,7 @@
     display: flex;
     justify-content: space-between;
     /* align-self: flex-end; */
+    margin-top: 12px;
 }
 
 .card{
