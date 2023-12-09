@@ -42,8 +42,8 @@ function Bar({ data, grouping, name }) {
               className="barTopLeft"
             >
               <img className="profile" src="profile.png" />
-              <p className="barName">{name}</p>
-              <p>{count}</p>
+              <p className="barName sameasname">{name}</p>
+              <p className="sameasname">{count}</p>
             </div>
             <div className="barTopRight">
               <p>
