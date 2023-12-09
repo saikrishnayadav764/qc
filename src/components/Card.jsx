@@ -27,7 +27,7 @@ function Card({ data, grouping }) {
       <div
         style={{
           display: "flex",
-          justifyContent: `${ispriority ? "flex-start" : "space-between"}`,
+          justifyContent: `${ispriority && "flex-start"}`,
         }}
         className="carddown"
       >
@@ -35,20 +35,30 @@ function Card({ data, grouping }) {
           <p>
             {grouping === "status" && (
               <span
-                style={{ color: "grey", marginTop: "3.6px" }}
+                style={{
+                  color: "grey",
+                  marginTop: "3.6px",
+                  marginRight: "5px",
+                }}
                 class="material-symbols-outlined"
               >
                 more_horiz
               </span>
             )}
             {grouping === "userId" && (
-              <span class="material-symbols-outlined">more_horiz</span>
+              <span
+                style={{
+                  color: "grey",
+                  marginTop: "3.6px",
+                  marginRight: "5px",
+                }}
+                class="material-symbols-outlined"
+              >
+                more_horiz
+              </span>
             )}
           </p>
         </div>
-
-        
-
 
         <div className="carddowntag">
           <div>
