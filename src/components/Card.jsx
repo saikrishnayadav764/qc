@@ -20,6 +20,8 @@ function Card({ data, grouping }) {
         {grouping === "priority" && <img className="circ" src="cutload.png" />}
         {grouping === "userId" && <img className="circ" src="tick.png" />}
         <p className="title">{data.title}</p>
+        <br />
+        <br />
       </div>
 
       <div
@@ -46,8 +48,7 @@ function Card({ data, grouping }) {
         </div>
 
         
-        <br />
-        <br />
+
 
         <div className="carddowntag">
           <div>
